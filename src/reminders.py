@@ -1,9 +1,12 @@
 import datetime as dt
 import json
-from config import REMINDERS_FILE, REMINDER_DUE_PARAM, REMINDER_SUBJECT_PARAM, REMINDER_ADDITIONAL_MESSAGE
+from config import REMINDERS_FILE, REMINDER_DUE_PARAM, REMINDER_SUBJECT_PARAM, REMINDER_ADDITIONAL_MESSAGE, REMINDERS
 
 
 def get_reminders():
+    if REMINDERS is not None:
+        return REMINDERS
+    
     with open(REMINDERS_FILE, "r") as file:
         return json.load(file)
 
