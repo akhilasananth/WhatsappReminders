@@ -19,6 +19,15 @@ jobs:
         run: |
           pipenv install
           pipenv graph
-      - name: Run reminders script
+      - name: Run main
+        env:
+          REMINDERS_FILE : ${{ secrets.REMINDERS_FILE }}
+          REMINDER_DUE_PARAM : ${{ secrets.REMINDER_DUE_PARAM }}
+          REMINDER_SUBJECT_PARAM : ${{ secrets.REMINDER_SUBJECT_PARAM }}
+          REMINDER_ADDITIONAL_MESSAGE : ${{ secrets.REMINDER_ADDITIONAL_MESSAGE }}
+          WHATSAPP_API_URL : ${{ secrets.WHATSAPP_API_URL }}
+          WHATSAPP_API_KEY : ${{ secrets.WHATSAPP_API_KEY }}
+          WHATSAPP_CHAT_ID : ${{ secrets.WHATSAPP_CHAT_ID }}
+          REMINDERS: ${{ secrets.REMINDERS }}
         run: |
           pipenv run python src/main.py
