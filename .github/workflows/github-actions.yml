@@ -1,5 +1,7 @@
 name: Reminders Workflow
-on: [push]
+on:
+  schedule:
+    - cron: '0 11 * * *' # Runs every day at 11 AM UTC
 jobs:
   send_reminders:
     runs-on: ubuntu-latest
