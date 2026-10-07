@@ -1,5 +1,5 @@
 name: Reminders Workflow
-on:[push]
+on: [push]
   jobs:
     send_reminders:
       runs-on: ubuntu-latest
