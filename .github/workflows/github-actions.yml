@@ -5,7 +5,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '0 14 * * *' 
+    - cron: '55 14 * * *' 
 jobs:
   send_reminders:
     runs-on: ubuntu-latest
