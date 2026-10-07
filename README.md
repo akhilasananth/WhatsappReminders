@@ -11,7 +11,7 @@ reminder-app/
 │
 ├── src/
 │   ├── __init__.py
-│   ├── main.py              # Starts the app
+│   ├── main.py              # ⭐️ Starts the app
 │   ├── whatsapp.py          # Sends WhatsApp messages
 │   └── reminders.py         # Reminder data/logic
 │   └── config.py            # Environment setup in one place 
