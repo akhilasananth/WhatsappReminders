@@ -21,4 +21,4 @@ jobs:
           pipenv graph
       - name: Run reminders script
         run: |
-          python src/main.py
+          pipenv run python src/main.py
