@@ -3,7 +3,9 @@
 Dad wanted me to remind him by messaging him a day before certain dates. I don't want to do that, it's too much to remember. So I am creating this. 
 
 
-This is a cron job using github actions 
+This is a cron job using github actions. 
+[Workflow on: schedule](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule)
+
 
 ## Project Structure
 ```text 
