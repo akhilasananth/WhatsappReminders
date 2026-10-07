@@ -1,6 +1,6 @@
 name: Reminders Workflow
 on:
- push:
+  push:
     branches:
       - main
   workflow_dispatch:
