@@ -23,7 +23,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-Pipfile.lock
 
 # Virtual environments
 .env
