@@ -26,3 +26,7 @@ reminder-app/
 ├── .gitignore
 └── README.md
 ```
+
+## Future Improvements
+- A way to clean out past reminders from the file
+- At what file size do you stop reading every single time the cron job runs? 
